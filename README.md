@@ -13,9 +13,9 @@ Variables:
 <pre>
     $number_of_columns: 12;  
     $max_width: 1140px;   
-    $spacing_unit: rem;  
+    $spacing_unit: px;  
     $horizontal_spacing: 20;  
-    $vertical_spacing: 10;
+    $vertical_spacing: 0;
 </pre>  
   
 SCSS:
@@ -31,6 +31,14 @@ SCSS:
        @include span(50);
      }
    }
+   
+   .child2 {
+     @include span(75);
+     
+     @media screen and (max-with:767px) { // mobile
+       @include span(100);
+     }
+   }
 </pre>
   
 CSS Output:  
@@ -42,10 +50,10 @@ CSS Output:
 }
 
 .parent {
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
@@ -58,10 +66,10 @@ CSS Output:
 }
 
 .parent > * {
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .child1 {
@@ -73,6 +81,18 @@ CSS Output:
   .child1 {
     float: left;
     width: 50%;
+  }
+}
+
+.child2 {
+  float: left;
+  width: 75%;
+}
+
+@media screen and (max-with: 767px) {
+  .child2 {
+    float: left;
+    width: 100%;
   }
 }
 </pre>
