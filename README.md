@@ -98,12 +98,12 @@ CSS Output:
 </pre>
   
 HTML usage:  
-<pre><code>
-  <div class="parent">
-    <div class="child1">Foo</div>
-    <div class="child2">Bar</div>
-  </div>
-</code></pre>  
+<pre>
+  &lt;div class=&quot;parent&quot;&gt;
+    &lt;div class=&quot;child1&quot;&gt;Foo&lt;/div&gt;
+    &lt;div class=&quot;child2&quot;&gt;Bar&lt;/div&gt;
+  &lt;/div&gt;
+</pre>  
 
 
  
