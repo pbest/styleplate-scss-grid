@@ -41,6 +41,14 @@ SCSS:
    }
 </pre>
   
+HTML usage:  
+<pre>
+  &lt;div class=&quot;parent&quot;&gt;
+    &lt;div class=&quot;child1&quot;&gt;Foo&lt;/div&gt;
+    &lt;div class=&quot;child2&quot;&gt;Bar&lt;/div&gt;
+  &lt;/div&gt;
+</pre>  
+  
 CSS Output:  
 <pre>
 *, *:before, *:after {
@@ -97,13 +105,6 @@ CSS Output:
 }
 </pre>
   
-HTML usage:  
-<pre>
-  &lt;div class=&quot;parent&quot;&gt;
-    &lt;div class=&quot;child1&quot;&gt;Foo&lt;/div&gt;
-    &lt;div class=&quot;child2&quot;&gt;Bar&lt;/div&gt;
-  &lt;/div&gt;
-</pre>  
 
 
  
