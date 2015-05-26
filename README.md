@@ -16,4 +16,20 @@ Variables:
     $spacing_unit: rem;  
     $horizontal_spacing: 20;  
     $vertical_spacing: 10;
+</pre>  
+  
+SCSS:
+<pre>
+   .parent {
+    @include grid-parent;
+   }
+   
+   .child1 {
+     @include span(25);
+     
+     @media screen and (max-with:767px) { // mobile
+       @include span(50);
+     }
+   }
 </pre>
+   
