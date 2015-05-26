@@ -9,7 +9,7 @@ A super flexible, simple, and 'semantic' SASS-based grid system
 5.  Be happy with your clean semantic HTML!!!
 
 #sample usage:#
-*Variables:*  
+**Variables:**  
 Use the `$number_of_columns` variable to choose how your grid will work for your design.  Ie, a percentage based grid would have 100 columns, 
 <pre>
     $number_of_columns: 12;  
@@ -19,7 +19,7 @@ Use the `$number_of_columns` variable to choose how your grid will work for your
     $vertical_spacing: 0;
 </pre>  
   
-*SCSS:*
+**SCSS:**
 <pre>
    .parent {
     @include grid_container;
@@ -42,7 +42,7 @@ Use the `$number_of_columns` variable to choose how your grid will work for your
    }
 </pre>
   
-*HTML usage:*  
+**HTML usage:**  
 <pre>
   &lt;div class=&quot;parent&quot;&gt;
     &lt;div class=&quot;child1&quot;&gt;Foo&lt;/div&gt;
@@ -50,7 +50,7 @@ Use the `$number_of_columns` variable to choose how your grid will work for your
   &lt;/div&gt;
 </pre>  
   
-*CSS Output:*  
+**CSS Output:**  
 <pre>
 *, *:before, *:after {
   -moz-box-sizing: border-box;
