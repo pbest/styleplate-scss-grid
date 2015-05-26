@@ -1,5 +1,5 @@
-# sass-grid
-A super flexible, simple, and 'semantic' SASS-based grid system
+# Styleplate's Semantic SCSS Grid
+A super flexible, simple, and 'semantic' SASS-based grid system.  This SCSS partial can be used stand alone or part of the Styleplate build system. 
 
 # How to use: #
 1.  Edit variables to match design  
