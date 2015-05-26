@@ -55,7 +55,7 @@ This Mixin is used inside our other mixins to
 establish gutters (vertical + horizontal).
 You can use it on anything that needs the grid 
 gutter applied.  */
-$unit-base: (
+$unit_base: (
     rem: 0rem,
     em: 0em,
     px: 0px,
@@ -63,10 +63,10 @@ $unit-base: (
 );
 
 @mixin grid-padding {
-  padding-left: ($horizontal-spacing / 2) * map-get($unit-base, $spacing-unit); 
-  padding-right: $horizontal-spacing / 2 * map-get($unit-base, $spacing-unit); 
-  padding-top: ($vertical-spacing / 2) * map-get($unit-base, $spacing-unit); 
-  padding-bottom: ($vertical-spacing / 2) * map-get($unit-base, $spacing-unit); 
+  padding-left: ($horizontal_spacing / 2) * map-get($unit_base, $spacing_unit); 
+  padding-right: $horizontal_spacing / 2 * map-get($unit_base, $spacing_unit); 
+  padding-top: ($vertical_spacing / 2) * map-get($unit_base, $spacing-unit); 
+  padding-bottom: ($vertical_spacing / 2) * map-get($unit_base, $spacing-unit); 
 }
 
 
@@ -78,7 +78,7 @@ grid items.  Its children are grid items */
   @include grid-padding;
   margin-left: auto;
   margin-right: auto;
-  max-width: $max-width;
+  max-width: $max_width;
   
   // make children self-clear
   &::after {
