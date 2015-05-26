@@ -10,7 +10,7 @@ A super flexible, simple, and 'semantic' SASS-based grid system
 
 #sample usage:#
 Variables:  
-`$number_of_columns: 12;   
+`$number_of_columns: 12; \n   
 $max_width: 1140px;   
 $spacing_unit: rem;  
 $horizontal_spacing: 20;  
