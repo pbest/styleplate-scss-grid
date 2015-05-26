@@ -9,9 +9,11 @@ A super flexible, simple, and 'semantic' SASS-based grid system
 5.  Be happy with your clean semantic HTML!!!
 
 #sample usage:#
-Variables:  
+Variables:
+<pre>
     $number_of_columns: 12;  
     $max_width: 1140px;   
     $spacing_unit: rem;  
     $horizontal_spacing: 20;  
     $vertical_spacing: 10;
+</pre>
