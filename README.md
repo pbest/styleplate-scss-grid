@@ -21,7 +21,7 @@ Variables:
 SCSS:
 <pre>
    .parent {
-    @include grid-parent;
+    @include grid_container;
    }
    
    .child1 {
@@ -32,4 +32,51 @@ SCSS:
      }
    }
 </pre>
+  
+CSS Output:  
+<pre>
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parent {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+.parent::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.parent > * {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.child1 {
+  float: left;
+  width: 25%;
+}
+
+@media screen and (max-with: 767px) {
+  .child1 {
+    float: left;
+    width: 50%;
+  }
+}
+</pre>
+
+ 
+ 
    
