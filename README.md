@@ -50,8 +50,8 @@ CSS Output:
 }
 
 .parent {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-left: auto;
@@ -66,8 +66,8 @@ CSS Output:
 }
 
 .parent > * {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -96,6 +96,15 @@ CSS Output:
   }
 }
 </pre>
+  
+HTML usage:  
+<pre>
+  <div class="parent">
+    <div class="child1">Foo</div>
+    <div class="child2">Bar</div>
+  </div>
+</pre>  
+
 
  
  
