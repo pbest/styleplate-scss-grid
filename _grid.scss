@@ -26,7 +26,7 @@ $max_width: 1140px; /* total available width of row
 
 /* Grid Spacing (gutter)
 –––––––––––––––––––––––– */
-$spacing_unit: rem;     /* Unit for the spacing variables below, 
+$spacing_unit: px;     /* Unit for the spacing variables below, 
                            options are: em, rem, px, or pt */ 
 $horizontal_spacing: 0; /* Horizontal gutter 
                            (how much space between grid items) - do not include units */
@@ -56,15 +56,15 @@ establish gutters (vertical + horizontal).
 You can use it on anything that needs the grid 
 gutter applied.  */
 $unit_base: (
-    rem: 0rem,
-    em: 0em,
-    px: 0px,
-    pt: 0pt
+    rem: 1rem,
+    em: 1em,
+    px: 1px,
+    pt: 1pt
 );
 
 @mixin grid-padding {
   padding-left: ($horizontal_spacing / 2) * map-get($unit_base, $spacing_unit); 
-  padding-right: $horizontal_spacing / 2 * map-get($unit_base, $spacing_unit); 
+  padding-right: ($horizontal_spacing / 2) * map-get($unit_base, $spacing_unit); 
   padding-top: ($vertical_spacing / 2) * map-get($unit_base, $spacing-unit); 
   padding-bottom: ($vertical_spacing / 2) * map-get($unit_base, $spacing-unit); 
 }
