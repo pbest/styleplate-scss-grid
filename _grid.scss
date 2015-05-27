@@ -168,7 +168,7 @@ This grid is based on percentages of 100.  eg --
   } @else if $n == 66 {
     width: percentage((2/3)*2);
   } @else {
-    width: percentage($n/100);
+    width: percentage($n/$number_of_columns);
   }
 }
 
@@ -186,7 +186,7 @@ sample result:  gives a margin-left of 25%
   } @else if $n == 66 {
     margin-left: percentage((2/3)*2);
   } @else {
-    margin-left: percentage($n/100);
+    margin-left: percentage($n/$number_of_columns);
   }
 }
 
@@ -202,7 +202,7 @@ sample result:  gives a margin-right of 25% */
   } @else if $n == 66 {
     margin-right: percentage((2/3)*2);
   } @else {
-    margin-right: percentage($n/100);
+    margin-right: percentage($n/$number_of_columns);
   }
 }
 
