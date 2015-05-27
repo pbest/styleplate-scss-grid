@@ -10,7 +10,7 @@ A super flexible, simple, and 'semantic' SASS-based grid system.  This SCSS part
 
 #sample usage:#
 **Variables:**  
-Use the `$number_of_columns` variable to choose how your grid will work for your design.  i.e., a percentage based grid would have 100 columns. 
+Use the `$number_of_columns` variable to choose how your grid will work for your design.  i.e., a percentage based grid would have 100 columns, 12 column would be "12", etc. 
 <pre>
     $number_of_columns: 100;  
     $max_width: 1140px;   
