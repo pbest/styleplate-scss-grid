@@ -61,11 +61,11 @@ Use the `$number_of_columns` variable to choose how your grid will work for your
 .parent {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  max-width: 960px;
 }
 
 .parent::after {
@@ -74,32 +74,41 @@ Use the `$number_of_columns` variable to choose how your grid will work for your
   clear: both;
 }
 
-.parent > * {
+.child1 {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.child1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
   float: left;
   width: 25%;
 }
 
 @media screen and (max-with: 767px) {
   .child1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     float: left;
     width: 50%;
   }
 }
 
 .child2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   float: left;
   width: 75%;
 }
 
 @media screen and (max-with: 767px) {
   .child2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     float: left;
     width: 100%;
   }
