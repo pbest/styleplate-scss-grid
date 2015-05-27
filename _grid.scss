@@ -49,6 +49,57 @@ Table of Contents
 */
 
       
+/* ==========================================================================================
+A SUPER FLEXIBLE GRID
+============================================================================================= 
+How to use:
+1.  Edit variables to match design
+2.  Add the grid-container mixin to parent element(s)
+3.  Start adding the span(n) mixin to your individual grid elements
+4.  Add the span(n) mixin to your media queries for a responsive grid flow
+5.  Be happy with your clean semantic HTML!!!
+*/
+
+
+/* -----------------------------------------------------------------
+VARIABLES - EDIT THESE
+-------------------------------------------------------------------- */
+
+/* Number of Columns
+–––––––––––––––––––– */
+$number_of_columns: 100; /* How many columns does your design have?
+                            This will determine how 
+
+/* Maximum Grid Width
+––––––––––––––––––––– */
+$max_width: 960px; /* total available width of row 
+                      contents. (include units) */
+
+/* Grid Spacing (gutter)
+–––––––––––––––––––––––– */
+$spacing_unit: px;     /* Unit for the spacing variables below, 
+                           options are: em, rem, px, or pt */ 
+$horizontal_spacing: 20; /* Horizontal gutter 
+                           (how much space between grid items) - do not include units */
+$vertical_spacing: 10;  /* Vertical gutter
+                           how much space above/below grid items) - do not include units */
+
+
+/* -----------------------------------------------------------------
+MIXINS - DO NOT EDIT THESE, BUT USE THEM (PLEASE READ THROUGH)
+-------------------------------------------------------------------- 
+
+Table of Contents
+-----------------
+1. Grid Padding
+2. Grid Container 
+3. Grid Nested
+4. Grid Span
+5. Grid Prefix
+6. Grid Suffix
+*/
+
+      
 /* Grid Padding
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 This Mixin is used inside our other mixins to 
@@ -86,10 +137,6 @@ grid items.  Its children are grid items */
         display: table;
         clear: both;
     }
-  
-  & > * { // apply grid padding to the immediate children
-      @include grid-padding;
-  } 
 }
 
 
@@ -114,6 +161,7 @@ This grid is based on percentages of 100.  eg --
   and so on.
 */
 @mixin span($n: 1) {
+  @include grid-padding;
   float: left;
   @if $n == 33 {
     width: percentage(1/3);
